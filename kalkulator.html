@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <style>
+            .container {
+                width:  370px;
+                height: 300px;
+                background-color: rgb(131, 201, 122);
+                background-size: cover;
+                background-position: center;
+                text-align: center;
+            }
+        </style>
+
+        <script>
+            function tambah() {
+                var angka1 = document.getElementById("input-1").value;
+                var angka2 = document.getElementById("input-2").value;
+
+                var hasil = parseInt(angka1) + parseInt(angka2);
+                document.getElementById("hasil").innerHTML = hasil;
+            }
+            function kurang() {
+                var angka1 = document.getElementById("input-1").value;
+                var angka2 = document.getElementById("input-2").value;
+
+                var hasil = parseInt(angka1) - parseInt(angka2);
+                document.getElementById("hasil").innerHTML = hasil;
+            }
+            function kali() {
+                var angka1 = document.getElementById("input-1").value;
+                var angka2 = document.getElementById("input-2").value;
+
+                var hasil = parseInt(angka1) * parseInt(angka2);
+                document.getElementById("hasil").innerHTML = hasil;
+            }
+            function bagi() {
+                var angka1 = document.getElementById("input-1").value;
+                var angka2 = document.getElementById("input-2").value;
+
+                var hasil = parseInt(angka1) / parseInt(angka2);
+                document.getElementById("hasil").innerHTML = hasil;
+            }
+        </script>
+    </head>
+    <body  style="background-color: rgb(255, 251, 14)">
+        
+         <h2>kalkulator</h2>
+         
+        </div>
+        <div class="container">
+            <table style="text-align: center; width: 100%; color: aliceblue;">
+                <tr>
+                     <td><label for="input-1">Angka 1</label></td>
+                     <td><label for="input-2">Angka 2</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="input-1"></td>
+                    <td><input type="number" id="input-2"></td>
+                </tr>
+            </table>
+            <br>
+            <button onclick="tambah()">Tambah(+)</button> 
+            <button onclick="kurang()">Kurang(-)</button> 
+            <button onclick="kali()">Kali(x)</button> 
+            <button onclick="bagi()">Bagi(:)</button> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3 style=" color: aliceblue;">HASIL</h3>
+            <center><h2 id="hasil" style="width: 70px; height: 30; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); transition: 2s, height 2s;">-</h2></center>
+            
+        </div>
+    </body>
+</html>
